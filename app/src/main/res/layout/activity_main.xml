@@ -16,20 +16,13 @@
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@android:drawable/ic_media_previous"
-            app:tint="@android:color/white">
-        </ImageView>
-
         <EditText
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:layout_marginStart="10dp"
             android:background="@android:drawable/edit_text"
-            android:hint="Vạn Deal Xinh, Giảm Tới 50%"
+            android:hint="Nhập Món Bạn Muốn Tìm Kiếm"
             android:paddingStart="12dp"/>
     </LinearLayout>
 
@@ -105,20 +98,55 @@
                         android:orientation="vertical"
                         android:layout_marginEnd="12dp">
 
+                        <!-- Hình món -->
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/suptomyum"/>
 
+                        <!-- Tên món -->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vạn Deal Xinh, Giảm tới 50%"
+                            android:text="Súp TomYum Hải Sản"
                             android:textSize="14sp"
+                            android:textStyle="bold"
                             android:paddingTop="6dp"/>
+
+                        <!-- Giá + nút thêm -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="4dp">
+
+                            <!-- Giá -->
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="60.000đ"
+                                android:textColor="#FF5722"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <!-- Nút thêm giỏ hàng -->
+                            <Button
+                                android:id="@+id/btnAddTomyum"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:backgroundTint="#FF5722"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
+
                     </LinearLayout>
-                    <!-- Item Deal 2 -->
+
+                     <!--Item Deal 2 -->
                     <LinearLayout
                         android:layout_width="160dp"
                         android:layout_height="wrap_content"
@@ -129,14 +157,42 @@
                             android:layout_width="match_parent"
                             android:layout_height="120dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/xoixoai"/>
+                            android:src="@drawable/padthai"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vạn Deal Xinh, Giảm tới 50%"
+                            android:text="Pad Thái"
                             android:textSize="14sp"
                             android:paddingTop="6dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="4dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="90.000đ"
+                                android:textColor="#FF5722"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <Button
+                                android:id="@+id/btnPadThai"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:backgroundTint="#FF5722"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
+
+
                     </LinearLayout>
 
                     <!-- Item Deal 3 -->
@@ -155,9 +211,35 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vạn Deal Xinh, Giảm tới 50%"
+                            android:text="Gỏi Ba Khía"
                             android:textSize="14sp"
                             android:paddingTop="6dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="4dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="95.000đ"
+                                android:textColor="#FF5722"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <Button
+                                android:id="@+id/btnBakhia"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:backgroundTint="#FF5722"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                     <!-- Item Deal 4 -->
@@ -176,9 +258,35 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vạn Deal Xinh, Giảm tới 50%"
+                            android:text="Gỏi Xoài Phủ Tôm Đỏ"
                             android:textSize="14sp"
                             android:paddingTop="6dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="4dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="110.000đ"
+                                android:textColor="#FF5722"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <Button
+                                android:id="@+id/btngoixoaiphutomdo"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:backgroundTint="#FF5722"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                     <!-- Item Deal 5 -->
@@ -197,9 +305,35 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Vạn Deal Xinh, Giảm tới 50%"
+                            android:text="Lab Bò"
                             android:textSize="14sp"
                             android:paddingTop="6dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="4dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="95.000đ"
+                                android:textColor="#FF5722"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <Button
+                                android:id="@+id/btnlabbo"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:backgroundTint="#FF5722"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                     <!-- Item Deal 6 -->
@@ -217,9 +351,35 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Đặt Nhóm Giảm Tới 105.000đ"
+                            android:text="Đảo Sườn Cay"
                             android:textSize="14sp"
                             android:paddingTop="6dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="4dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="150.000đ"
+                                android:textColor="#FF5722"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <Button
+                                android:id="@+id/btndaosuoncay"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:backgroundTint="#FF5722"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -266,20 +426,41 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@android:drawable/ic_menu_gallery" />
+                            android:src="@drawable/banhchuoi" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Pad Thai"
+                            android:text="Bánh Chuổi Thái"
                             android:textStyle="bold"
                             android:layout_marginTop="6dp"/>
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="55.000đ"
-                            android:textColor="#FF5722"/>
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="4dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="45.000đ"
+                                android:textColor="#FF5722"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <Button
+                                android:id="@+id/btnbanhchuoithai"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:backgroundTint="#FF5722"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                     <!-- MÓN 2 -->
@@ -295,20 +476,41 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@android:drawable/ic_menu_gallery"/>
+                            android:src="@drawable/banhquay"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Tom Yum"
+                            android:text="Bánh Quẩy Sốt Lá Dứa"
                             android:textStyle="bold"
                             android:layout_marginTop="6dp"/>
 
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="65.000đ"
-                            android:textColor="#FF5722"/>
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="4dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="45.000đ"
+                                android:textColor="#FF5722"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <Button
+                                android:id="@+id/btnbanhquay"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:backgroundTint="#FF5722"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                     <!-- MÓN 3 -->
@@ -323,22 +525,91 @@
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
                             android:scaleType="centerCrop"
-                            android:src="@android:drawable/ic_menu_gallery"/>
+                            android:src="@drawable/kemchuoichien"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Trà Sữa Thái"
+                            android:text="Kem Dừa Chuối Chiên"
                             android:textStyle="bold"
                             android:layout_marginTop="6dp"/>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="4dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="45.000đ"
+                                android:textColor="#FF5722"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <Button
+                                android:id="@+id/btnkemduacchuoichien"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:backgroundTint="#FF5722"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- MÓN 4 -->
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@android:color/white"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/chethai"/>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="30.000đ"
-                            android:textColor="#FF5722"/>
-                    </LinearLayout>
+                            android:text="Chè Thái"
+                            android:textStyle="bold"
+                            android:layout_marginTop="6dp"/>
 
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="4dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="45.000đ"
+                                android:textColor="#FF5722"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <Button
+                                android:id="@+id/btnchethai"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:text="+"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:backgroundTint="#FF5722"
+                                android:textColor="#FFFFFF"/>
+                        </LinearLayout>
+                    </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
 
